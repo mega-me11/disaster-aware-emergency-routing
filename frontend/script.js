@@ -33,9 +33,13 @@ function findRoute() {
         return;
     }
 
+    
     result.textContent =
-        "Selected mode: " + selectedMode +
-        ". Route calculation will be connected to the routing algorithm.";
+    "Route Preview\n" +
+    "Source: " + source + "\n" +
+    "Destination: " + destinationValue + "\n" +
+    "Selected mode: " + selectedMode.charAt(0).toUpperCase() + selectedMode.slice(1) + "\n" +
+    "This is a frontend preview. Actual route calculation will be connected later.";
 }
 
 document.getElementById("updateRoad").addEventListener("click", () => {
