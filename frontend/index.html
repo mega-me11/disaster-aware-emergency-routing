@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Route Optimizer</title>
+    <title>Disaster-Aware Emergency Routing System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Emergency Route Optimizer</h1>
-        <p>Disaster-Aware Shortest Path Navigation</p>
+        <h1>Disaster-Aware Emergency Routing System</h1>
+        <p>Graph-Based Emergency Route Optimization</p>
     </header>
 
     <main>
@@ -20,38 +21,64 @@
             <label for="start">Source:</label>
             <select id="start">
                 <option value="">Select Source</option>
-                <option value="A">Hospital</option>
-                <option value="B">Main Junction</option>
-                <option value="C">City Center</option>
+                <option value="A">Location A</option>
+                <option value="B">Location B</option>
+                <option value="C">Location C</option>
+                <option value="D">Location D</option>
+                <option value="E">Location E</option>
+                <option value="F">Location F</option>
             </select>
 
             <label for="destination">Destination:</label>
             <select id="destination">
                 <option value="">Select Destination</option>
-                <option value="A">Hospital</option>
-                <option value="B">Main Junction</option>
-                <option value="C">City Center</option>
+                <option value="A">Location A</option>
+                <option value="B">Location B</option>
+                <option value="C">Location C</option>
+                <option value="D">Location D</option>
+                <option value="E">Location E</option>
+                <option value="F">Location F</option>
             </select>
 
             <div class="buttons">
-                <button id="fastest">Fastest</button>
-                <button id="safest">Safest</button>
-                <button id="balanced">Balanced</button>
+                <button id="fastest">Fastest Route</button>
+                <button id="safest">Safest Route</button>
+                <button id="shortest">Shortest Route</button>
             </div>
         </section>
 
         <section class="road-section">
             <h2>Road Status Update</h2>
 
-            <label for="road">Road:</label>
-            <input type="text" id="road" placeholder="Enter road name">
+            <label for="roadStart">Road From:</label>
+            <select id="roadStart">
+                <option value="">Select first location</option>
+                <option value="A">Location A</option>
+                <option value="B">Location B</option>
+                <option value="C">Location C</option>
+                <option value="D">Location D</option>
+                <option value="E">Location E</option>
+                <option value="F">Location F</option>
+            </select>
 
-            <label for="status">Status:</label>
+            <label for="roadEnd">Road To:</label>
+            <select id="roadEnd">
+                <option value="">Select second location</option>
+                <option value="A">Location A</option>
+                <option value="B">Location B</option>
+                <option value="C">Location C</option>
+                <option value="D">Location D</option>
+                <option value="E">Location E</option>
+                <option value="F">Location F</option>
+            </select>
+
+            <label for="status">New Road Status:</label>
             <select id="status">
-                <option value="normal">Normal</option>
-                <option value="risky">Risky</option>
-                <option value="flooded">Flooded</option>
-                <option value="blocked">Blocked</option>
+                <option value="NORMAL">Normal</option>
+                <option value="RISKY">Risky</option>
+                <option value="FLOODED">Flooded</option>
+                <option value="DAMAGED">Damaged</option>
+                <option value="BLOCKED">Blocked</option>
             </select>
 
             <button id="updateRoad">Update Road Status</button>
@@ -59,10 +86,11 @@
 
         <section class="result-section">
             <h2>Route Information</h2>
-            <p id="result">Select source and destination to begin.</p>
+            <p id="result" style="white-space: pre-line;">Select a source and destination to begin.</p>
         </section>
     </main>
 
     <script src="script.js"></script>
 </body>
 </html>
+
