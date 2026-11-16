@@ -192,7 +192,7 @@ Actual outputs depend on the network configuration and current road statuses. Ad
 
 ## Contributors
 
-- Megha Chatterjee — Backend, graph algorithms, API integrations, Presentation
+- Megha Chatterjee — Backend, graph algorithms, API integrations, Frontend-Backend integration Presentation
 - Samadrita Dey — Frontend development, Presentation 
 - Shreya Bera — Frontend development
 - Tisya Chakraborty - Report Documentation 
