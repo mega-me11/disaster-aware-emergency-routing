@@ -5,11 +5,18 @@ from pydantic import BaseModel, Field
 from backend.graph import RoadNetwork
 from backend.routing import find_route
 from backend.disaster_updates import update_road_status
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Disaster-Aware Emergency Routing System",
     description="Graph-based emergency routing with disaster updates.",
     version="1.0.0",
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
 )
 
 # Temporary sample network for development.
