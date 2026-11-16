@@ -1,5 +1,5 @@
 
-const API_BASE = "https://stunning-space-invention-q994pj676wc9rp-8000.app.github.dev/";
+const API_BASE = "https://ubiquitous-parakeet-r4j4rrjxgjprcpg56-8000.app.github.dev/";
 
 const start = document.getElementById("start");
 const destination = document.getElementById("destination");
